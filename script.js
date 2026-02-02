@@ -44,7 +44,7 @@ function sleep(ms) {
 let buttonWidth = '30px';
 let buttonHeight = '10px';
 let yesPresses = 0;
-function yes() {
+function yesButtonPress() {
     if (yesPresses >=6) {
         message.textContent = "YUHHHHHHHH\nHAPPY VALENTINES DAY\nI LOVE YOUUU";
         yesButton.style.visibility = "hidden";
@@ -76,4 +76,8 @@ function yes() {
         yesButton.style.height = buttonHeight;
         yesPresses += 1;
     }
+}
+
+function noButtonPress() {
+    alert("No");
 }
